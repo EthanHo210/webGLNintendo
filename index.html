@@ -1,1 +1,27 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NES Emulator</title>
+    <style>
+        #emulator-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+    </style>
+</head>
+<body>
+    <div id="emulator-container">
+        <canvas id="nes-screen" width="256" height="240"></canvas>
+    </div>
+    
+    <script src="nes-emulator.js"></script>
+    <script>
+        const emulator = new NES_Emulator('#nes-screen', 'path/to/your/rom.nes');
+        emulator.start();
+    </script>
+</body>
+</html>
