@@ -1,0 +1,23 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #000;
+    padding-top:20px;
+}
+
+header, footer{
+    background-color: #8B0000;
+    text-align: center;
+}
+
+header h1, footer p {
+    color: white;
+}
+
+canvas {
+    image-rendering: pixelated;
+    flex-grow: 1;
+}
