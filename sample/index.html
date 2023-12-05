@@ -18,8 +18,21 @@
       </div>
       <div class="search">
          <input type="text" id="search" placeholder="Search">
-         <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+         <span class="search-icon">
+            <i class="fa-solid fa-magnifying-glass"></i>
+         </span>
+            <i class="fa-solid fa-xmark"></i>
       </div>
+
+      <script>
+         let search = document.querySelector(".search"),
+            searchIcon = document.querySelector(".search-icon"),
+            closeIcon = document.querySelector(".fa-xmark");
+
+            console.log(search, searchIcon, closeIcon)
+         searchIcon.addEventListener("click", () => search.classList.add("open"));
+         closeIcon.addEventListener("click", () => search.classList.remove("open"));
+      </script>
    </header>
 
    <div class="name">
@@ -37,13 +50,13 @@
             <option value="" selected>Option 1</option>
             <option value="business">From 5 to 16</option>
             <option value="personal">>16</option>
-      </select>
-      <select name="recommend option" id="recommend_option">
-         <option value="" selected>Free time in day</option>
-         <option value="business">less than 3 hours</option>
-         <option value="personal">from 3 to 5 hours</option>
-         <option value="personal">from 5 to 8 hours</option>
-   </select>
+         </select>
+         <select name="recommend option" id="recommend_option">
+            <option value="" selected>Free time in day</option>
+            <option value="business">less than 3 hours</option>
+            <option value="personal">from 3 to 5 hours</option>
+            <option value="personal">from 5 to 8 hours</option>
+         </select>
 
       </div>
 
@@ -57,4 +70,3 @@
    </footer>
 </body>
 </html>
-
