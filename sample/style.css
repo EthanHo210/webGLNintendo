@@ -31,10 +31,6 @@ header .header{
    margin-top: 10%;
 }
 
-header .header h1{
-   align-items: center;
-}
-
 header .header h2{
    font-size: 25px;
    margin-top: 60px;
@@ -112,11 +108,13 @@ margin-bottom: 30px;
 
 .input-group h2{
    margin-bottom: 2%;
+   margin-left: 2%;
 }
 
 .input-group .filter{
    margin-left: -10%;
 }
+
 .input-group .filter .items{
    display: inline-block;
    margin-bottom: 35px;
@@ -126,23 +124,13 @@ margin-bottom: 30px;
 }
 
 .input-group .items #recommend_option{
-   background-color: aliceblue;
-   height: 5vh;
-   width: 30vh;
-   border-radius: 11px;
-   font-size: 15px;
-   text-align: center;
-   margin-left: 5px;
-}
-
-.items{
-   display: inline-block;
-   margin-bottom: 35px;
-   margin-left: 50px;
-}
-
-.input-group .items option{
-   background-color: aliceblue;
+background-color: aliceblue;
+height: 5vh;
+width: 30vh;
+border-radius: 11px;
+font-size: 15px;
+text-align: center;
+margin-left: 5px;
 }
    
 .button input{
@@ -196,22 +184,15 @@ footer p{
    header .header{
       font-size: 15px;
       margin-top: 0%;
-      color: rgb(205, 113, 0);
       margin-left: 0%;
-      align-items: center;
    }
    
    header .header h1{
-      align-items: center;
       font-size: 35px;
    }
    
    header .header h2{
       visibility: hidden;
-   }
-   
-   html{
-       font-size: 90%;
    }
 
    header .search{
@@ -227,6 +208,7 @@ footer p{
       margin-bottom: 2rem;
       margin-right: 30%;
    }
+   
    .input-group .filter{
       margin-left: 0%;
    }
@@ -286,58 +268,54 @@ footer p{
    header .header{
       margin-left: 10%;
    }
-   
-   html{
-      font-size: 65%;
-   }
 
   header h1{
    margin-left: -10px;
   }
 
-.search {
-   height: 28px;
-   max-width: 36px;
-   width: 60%;
-   margin-left: 2%;
-   margin-right: 10px;
-   margin-top: 15px;
-   border-radius: 11px;
-}
+   .search {
+      height: 28px;
+      max-width: 36px;
+      width: 60%;
+      margin-left: 2%;
+      margin-right: 10px;
+      margin-top: 15px;
+      border-radius: 11px;
+   }
 
-.search.open{
-   max-width: 150px;
-   margin-right: 15px;
-   margin-left: -10%;
-}
+   .search.open{
+      max-width: 150px;
+      margin-right: 15px;
+      margin-left: -10%;
+   }
 
-.search input{
-   font-size: 12px;
-   margin-left: 10px;
-}
+   .search input{
+      font-size: 12px;
+      margin-left: 10px;
+   }
 
-.search.open input{
-   padding : 0 15px 0 15px;
-}
+   .search.open input{
+      padding : 0 15px 0 15px;
+   }
 
-.search.open #search{
-   max-width: 500px;
-}
+   .search.open #search{
+      max-width: 500px;
+   }
 
-.search .search-icon{
-   height: 100%;
-   width: 30px;
-}
+   .search .search-icon{
+      height: 100%;
+      width: 30px;
+   }
 
-.search.open .search-icon{
-   border-radius: 11px 0 0 11px;
-}
+   .search.open .search-icon{
+      border-radius: 11px 0 0 11px;
+   }
 
-.search-icon .fa-magnifying-glass{
-   color: rgb(255, 255, 255);
-}
+   .search-icon .fa-magnifying-glass{
+      color: rgb(255, 255, 255);
+   }
 
-.search .fa-xmark{
+   .search .fa-xmark{
    right: 50rem;
    color: #9b9b9b;
    background-color: #c5c5c5;
@@ -345,54 +323,50 @@ footer p{
    width: 30%;
    height: 100%;
    font-size: 25px;
-}
+   }
 
-.search.open .fa-xmark{
-   width: 0%;
-   margin-left: 45%;
-   left: 50%;
-   border-radius: 11px;
-}
+   .search.open .fa-xmark{
+      width: 0%;
+      margin-left: 45%;
+      left: 50%;
+      border-radius: 11px;
+   }
 
-.name h1{
-   font-size: 25px;
-}
+   .name h1{
+      font-size: 25px;
+      margin-bottom: 0px;
+   }
 
-.input-group h2{
-   text-align: center;
-   margin-left: -10%;
-   margin-bottom: 10%;
-   font-size: 20px;
-}
+   .input-group h2{
+      text-align: center;
+      margin-left: -10%;
+      margin-bottom: 10%;
+      font-size: 20px;
+   }
 
-.input-group .filter .items{
-   margin-left: 45px;
-   border-radius: 11px;
-   width: 42%;
-   height: 25px;
-   margin-left: 23%;
-   margin-bottom: 0%;
-   margin-bottom: 10px;
-}
+   .input-group .filter .items{
+      border-radius: 11px;
+      width: 42%;
+      height: 25px;
+      margin-left: 23%;
+      /* margin-bottom: 0%; */
+      margin-bottom: 10px;
+   }
 
-.input-group .items #recommend_option{
-   margin-right: 0px;
-   height: 3vh;
-   width: 20vh;
-   font-size: 12px;
-   margin-top: 2px;
-}
+   .input-group .items #recommend_option{
+      margin-right: 0px;
+      height: 3vh;
+      width: 20vh;
+      font-size: 12px;
+      margin-top: 2px;
+   }
 
-.items{
-   margin-bottom: 10px;
-   margin-left: -5px;
-}
+   .button{
+      margin-left: 15%;
+   }
 
-.button{
-   margin-left: 15%;
-}
-.button input{
-   margin-top:5px;
-   margin-bottom: 5rem;
-}
+   .button input{
+      margin-top:5px;
+      margin-bottom: 5rem;
+   }
 }
