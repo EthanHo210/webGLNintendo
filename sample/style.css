@@ -23,6 +23,7 @@ header {
    background-size: cover;
    background-position: center;
 }
+
 header .header{
    color: rgb(205, 113, 0);
    margin-left: 20%;
@@ -91,6 +92,7 @@ header .header h2{
    color: #fff;
    visibility: hidden;
 }
+
 .body{
    background-color: rgb(152, 145, 131);
 }
@@ -122,37 +124,22 @@ margin-bottom: 30px;
    background-color: aliceblue;
    border-radius: 11px;
 }
-/* 
-.input-group .filter .items option {
-   margin-left: 20px;
-   text-decoration: underline solid 1.5px;
-   text-decoration-color: #0B3948;
-} */
 
 .input-group .items #recommend_option{
-background-color: aliceblue;
-height: 5vh;
-width: 30vh;
-border-radius: 11px;
-font-size: 15px;
-text-align: center;
-margin-left: 5px;
+   background-color: aliceblue;
+   height: 5vh;
+   width: 30vh;
+   border-radius: 11px;
+   font-size: 15px;
+   text-align: center;
+   margin-left: 5px;
 }
-
 
 .items{
    display: inline-block;
    margin-bottom: 35px;
    margin-left: 50px;
 }
-
-/* .input-group .items #recommend_option{
-background-color: aliceblue;
-margin-right: 50px;
-height: 5vh;
-border-radius: 11px;
-text-align: center;
-} */
 
 .input-group .items option{
    background-color: aliceblue;
@@ -176,6 +163,7 @@ text-align: center;
    display: inline;
    margin-left: 33%;
 }
+
 .button input:hover{
    background-color: #B7D3F2;
    color: #000;
@@ -186,6 +174,7 @@ footer {
    width: 100%;
    margin-top: 5%;
 }
+
 footer p{
    background-color: rgb(223, 223, 223);
    text-align: center;
@@ -195,7 +184,6 @@ footer p{
 }
 
 @media screen and (min-width:768px) and (max-width: 1024px){
-
    header {
       background: none;  
       width: 100%;
@@ -244,41 +232,25 @@ footer p{
    }
 
    .input-group .filter .items{
-      margin-bottom: 35px;
-      margin-left: 35px;
+      margin-left: 10%;
       border-radius: 11px;
-      width: 65%;
-   }
-   
-   .input-group .filter .items label{
-      visibility: hidden;
-   }
-
-   .input-group .filter .items option .visible{
-      visibility: hidden;
-   }
-
-   .input-group .filter .items option .hide{
-      visibility: hidden;
+      width: 55%;
    }
 
    .items{
-      display: inline-block;
+      margin-bottom: 10px;
+      margin-left: -5px;
    }
    
    .input-group .items #recommend_option{
       background-color: aliceblue;
-      margin-right: 50px;
-      height: 3vh;
+      height: 3.5vh;
       width: 35vh;
-      border-radius: 11px;
-      text-align: center;
       font-size: 20px;
-      margin-top: -10%;
+      margin-left: -5%;
    }
 
    .button{
-      display: flex;
       margin-left: 20%;
    }
 
@@ -288,24 +260,13 @@ footer p{
       font-size: 20px;
    }
 
-   .button input:hover{
-      background-color: cornflowerblue;
-   }
-
    .search input{
       font-size: 12px;
       margin-left: 10%;
    }
-
-   footer {
-      bottom: 0;
-      width: 100%;
-      margin-top: 10%;
-   }
 }
 
 @media screen and (max-width: 480px){
-
    header .header{
       font-size: 10px;
       margin-top: 0%;
@@ -320,7 +281,7 @@ footer p{
       height: 12%; 
       background-color: rgb(223, 223, 223);
       padding:10px 20px 0px 0px;
-}
+   }
 
    header .header{
       margin-left: 10%;
@@ -338,12 +299,10 @@ footer p{
    height: 28px;
    max-width: 36px;
    width: 60%;
-   background-color: #c5c5c5;
    margin-left: 2%;
    margin-right: 10px;
    margin-top: 15px;
    border-radius: 11px;
-   transition: all 0.3s cubic-bezier(0.6, -0.55, 0.265, 1.55);
 }
 
 .search.open{
@@ -379,13 +338,13 @@ footer p{
 }
 
 .search .fa-xmark{
-right: 50rem;
-color: #9b9b9b;
-background-color: #c5c5c5;
-visibility: visible;
-width: 30%;
-height: 100%;
-font-size: 25px;
+   right: 50rem;
+   color: #9b9b9b;
+   background-color: #c5c5c5;
+   visibility: visible;
+   width: 30%;
+   height: 100%;
+   font-size: 25px;
 }
 
 .search.open .fa-xmark{
@@ -409,34 +368,19 @@ font-size: 25px;
 .input-group .filter .items{
    margin-left: 45px;
    border-radius: 11px;
-   width: 53%;
-   height: 30px;
-   margin-top: -30px;
-   margin-left: 62px;
-}
-
-.input-group .filter .items label{
-visibility: hidden;
-}
-
-.input-group .filter .items .visible{
-   visibility: hidden;
-}
-
-.input-group .filter .items .hide {
-   visibility: visible;
+   width: 42%;
+   height: 25px;
+   margin-left: 23%;
+   margin-bottom: 0%;
+   margin-bottom: 10px;
 }
 
 .input-group .items #recommend_option{
    margin-right: 0px;
-   height: 3.5vh;
-   width: 23vh;
-   font-size: 10px;
-   margin-top: -12px;
-}
-
-.input-group #recommend_option{
-   margin-top: 10px;
+   height: 3vh;
+   width: 20vh;
+   font-size: 12px;
+   margin-top: 2px;
 }
 
 .items{
@@ -447,7 +391,6 @@ visibility: hidden;
 .button{
    margin-left: 15%;
 }
-
 .button input{
    margin-top:5px;
    margin-bottom: 5rem;
