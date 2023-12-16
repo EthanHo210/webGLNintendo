@@ -22,61 +22,77 @@
     </section>
 
     <section id="game-detail" class="section-p1">
-        <div class="detail-img">
-            <img src="img/stray_main.jpg" width="100%" id="MainImg" alt="">
-
-            <div class="mini.img-group">
-                <div class="mini.img-col">
-                    <img src="img/stray2.jpg" width="100%" class="mini.img" alt="">
-                </div>
-                <div class="mini.img-col">
-                    <img src="img/stray3.jpg" width="100%" class="mini.img" alt="">
-                </div>
-                <div class="mini.img-col">
-                    <img src="img/stray4.jpg" width="100%" class="mini.img" alt="">
-                </div>
-                <div class="mini.img-col">
-                    <img src="img/stray.jpg" width="100%" class="mini.img" alt="">
-                </div>
+        <div class="slideShow-review">
+        <div class="slideShow">
+            <div class="slide">
+                <img src="img/stray_main.jpg" width="600px" height="450px" alt="">
+                <div class="text">1/5</div>
             </div>
+            <div class="slide">
+                <img src="img/stray2.jpg" width="600px" height="450px" class="mini.img" alt="">
+                <div class="text">2/5</div>
+            </div>
+            <div class="slide">
+                <img src="img/stray3.jpg" width="600px" height="450px" alt="">
+                <div class="text">3/5</div>
+            </div>
+            <div class="slide">
+                <img src="img/stray4.jpg" width="600px" height="450px"  alt="">
+                <div class="text">4/5</div>
+            </div>
+            <div class="slide">
+                <img src="img/stray.jpg" width="600px" height="450px"  class="mini.img" alt="">
+                <div class="text">5/5</div>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+        </div>
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span> 
         </div>
 
-    <div class="review-info">
-            <h3>Home/Action - Adventure</h3>
-            <h4>STRAY</h4>
-            <span>Release date: 19 July, 2022</span>
-            <br>
-            <span>Genre: Adventure</span>
-            <br>
-            <span>Ratings: <div class="star">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                </div>
-            </span>
-            <br>
-            <span>Available in: PS4, PS5, Windows, XBox One & macOS</span>
-            <br>
-            </div>
-    </section>
-
-    <div class="detail-review">
-        <h3>Overview</h3>
-        <span>Silent protagonists are nothing new in video games, but Stray certainly pushes that concept to an interesting place. Part platformer, part traditional adventure game, this cyberpunk world full of neon-soaked robots transforms into a giant jungle gym from your perspective, which is just one foot off the ground. The concept of putting you in the paws of an average cat may be a silly one on the surface, but Stray uses that furry vehicle to tell a genuinely compelling story with some entertaining action along the way. Not all of its ideas land on their feet, but it was impossible to shake the fuzzy feeling it gave me right from the adorable opening minutes.
-
-            To be clear: you’re not a magic cat, not a mutated sci-fi cat, not some kind of sentient super cat – just a normal, cute cat, albeit one that displays the sort of intelligent awareness we all like to pretend our own cats do when we aren’t looking. The simplicity of that concept works wonderfully, especially because the fact that you are a cat doesn’t actually matter all that much to the artificial people you interact with or the things you are asked to do. The robotic denizens of this cyberpunk world generally talk to you like they would anybody else, and the only way it’s ever really relevant to the story or the action is because you can fit into tight spaces they can’t.</span>
     </div>
-
-    <section id="review1" class="section-p1">
-        <h2>Read more related review here</h2>
-        <div class="pro-container">
-            <div class="pro">
-                <img src="img/legostarwar.png" alt="">
-                <div class="des">
-                    <span>2022 Sit Back and Relax</span>
-                    <h5>LEGO STAR WAR</h5>
+        <script>
+            let slideIndex = 1;
+            showSlides(slideIndex);
+            
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+            
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+            
+            function showSlides(n) {
+              let i;
+              let slides = document.getElementsByClassName("slide");
+              let dots = document.getElementsByClassName("dot");
+              if (n > slides.length) {slideIndex = 1}    
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+              }
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+            }
+            </script>
+        
+        <div class="review">
+            <div class="review-info">
+                <h3>Home/Action - Adventure</h3>
+                <h4>STRAY</h4>
+                <span>Release date: 19 July, 2022</span>
+                <br>
+                <span>Genre: Adventure</span>
+                <br>
+                <span>Ratings: 
                     <div class="star">
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
@@ -84,13 +100,47 @@
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                     </div>
+                </span>
+                <br>
+                <span>Available in: PS4, PS5, Windows, XBox One & macOS</span>
+                <br>
+            </div>
+        </div>
+    </section>
+    <div class="detail-review">
+        <h3>Overview</h3>
+        <span>Silent protagonists are nothing new in video games, but Stray certainly pushes that concept to an interesting place. Part platformer, part traditional adventure game, this cyberpunk world full of neon-soaked robots transforms into a giant jungle gym from your perspective, which is just one foot off the ground. The concept of putting you in the paws of an average cat may be a silly one on the surface, but Stray uses that furry vehicle to tell a genuinely compelling story with some entertaining action along the way. Not all of its ideas land on their feet, but it was impossible to shake the fuzzy feeling it gave me right from the adorable opening minutes.
+
+            To be clear: you’re not a magic cat, not a mutated sci-fi cat, not some kind of sentient super cat – just a normal, cute cat, albeit one that displays the sort of intelligent awareness we all like to pretend our own cats do when we aren’t looking. The simplicity of that concept works wonderfully, especially because the fact that you are a cat doesn’t actually matter all that much to the artificial people you interact with or the things you are asked to do. The robotic denizens of this cyberpunk world generally talk to you like they would anybody else, and the only way it’s ever really relevant to the story or the action is because you can fit into tight spaces they can’t.</span>
+    </div>
+    
+
+    <section id="review1" class="section-p1">
+        <h2>Read more related review here</h2>
+        <div class="pro-container">
+            <div class="pro">
+                <img src="img/legostarwar.png" alt="">
+                <div class="des">
+                    <div class="name">
+                        <span>2022 Sit Back and Relax</span>
+                        <h5>LEGO STAR WAR</h5>
+                        <div class="star">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="pro">
                 <img src="img/deathstragnding.png" alt="">
                 <div class="des">
-                    <span>2022 Best Game on the go</span>
-                    <h5>DEATH STANDING: DIRECTOR'S CUTS</h5>
+                    <div class="name">
+                        <span>2022 Best Game on the go</span>
+                        <h5>DEATH STANDING: DIRECTOR'S CUTS</h5>
+                    </div>
                     <div class="star">
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
@@ -103,8 +153,10 @@
             <div class="pro">
                 <img src="img/stray_main.jpg" alt="">
                 <div class="des">
-                    <span>2022 Most Innovative Gameplay</span>
-                    <h5>STRAY</h5>
+                    <div class="name">
+                        <span>2022 Most Innovative Gameplay</span>
+                        <h5>STRAY</h5>
+                    </div>
                     <div class="star">
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
@@ -117,8 +169,10 @@
             <div class="pro">
                 <img src="img/godofwar.jpg" alt="">
                 <div class="des">
-                    <span>2022 Outstanding Story-rich Game</span>
-                    <h5>GOD OF WAR</h5>
+                    <div class="name">
+                        <span>2022 Outstanding Story-rich Game</span>
+                        <h5>GOD OF WAR</h5>
+                    </div>
                     <div class="star">
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
@@ -131,6 +185,8 @@
         </div>
 
     </section>
+
+
     
      <section id="newsletter" class="section-p1 section-m1">
         <div class="newstext">
