@@ -1,0 +1,57 @@
+@font-face {
+    font-family: "Eurostile-BoldExtendedTwo";
+    src: url("https://db.onlinewebfonts.com/t/007f636c4af6a332a98f32cc3cee8cb4.eot");
+    src: url("https://db.onlinewebfonts.com/t/007f636c4af6a332a98f32cc3cee8cb4.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/007f636c4af6a332a98f32cc3cee8cb4.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/007f636c4af6a332a98f32cc3cee8cb4.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/007f636c4af6a332a98f32cc3cee8cb4.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/007f636c4af6a332a98f32cc3cee8cb4.svg#Eurostile-BoldExtendedTwo")format("svg");
+}
+
+body {
+    margin: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #D3D3D3;
+}
+
+header{
+    background-color: #8A8988;
+    font-size: 14px;
+}
+
+footer{
+    background-color: #8A8988;
+    text-align: center;
+    font-size: 14px;
+}
+
+header h1, footer p {
+    color: #8B0000;
+    font-family: "Eurostile-BoldExtendedTwo";
+}
+
+canvas {
+    image-rendering: pixelated;
+    flex-grow: 1;
+    margin-top: auto;
+}
+
+.footer-buttons {
+    margin-top: 5px;
+}
+
+.footer-buttons a {
+    color: #8B0000;
+    text-decoration: none;
+    margin: 5px 30px;
+    font-size:12px;
+    font-family: "Eurostile-BoldExtendedTwo";
+}
+
+/* Add styles for hover effect if desired */
+.footer-buttons a:hover {
+    text-decoration: underline;
+}
