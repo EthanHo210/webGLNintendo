@@ -7,7 +7,7 @@ let listOfGame = [
       name: 'Super Mario',
       image: 'image/image.webp',
       rate: '<i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>',
-      nature: {
+      detail: {
          ageValue: ['From 5 to 16', '>16'],
          timeValue: ['Less than 3 hours', 'From 3 to 5 hours', 'From 5 to 8 hours'],
          typeValue: ['Action', 'Adventure', 'Kid'],
@@ -19,7 +19,7 @@ let listOfGame = [
       name: 'Star Wars: Rogue Squadron',
       image: 'image/image1.png',
       rate: '</i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>',
-      nature: {
+      detail: {
          ageValue: ['>16'],
          timeValue: ['Less than 3 hours', 'From 3 to 5 hours' ,'From 5 to 8 hours'],
          typeValue:['Action'],
@@ -31,7 +31,7 @@ let listOfGame = [
       name: 'Name product The Legend of Zelda: Ocarina of Time',
       image: 'image/image3.jpg',
       rate: '<i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>',
-      nature: {
+      detail: {
          ageValue: ['>16'],
          timeValue: ['From 3 to 5 hours', 'From 5 to 8 hours'],
          typeValue: ['Adventure', 'Action'],
@@ -43,7 +43,7 @@ let listOfGame = [
       name: 'Name product Mario Golf',
       image: 'image/image2.jpg',
       rate: '<i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>',
-      nature: {
+      detail: {
          ageValue: ['From 5 to 16', '>16'],
          timeValue: ['Less than 3 hours', 'From 3 to 5 hours'],
          typeValue:['Kid'],
@@ -55,7 +55,7 @@ let listOfGame = [
       name: 'Name product F-Zero X',
       image: 'image/image4.jpg',
       rate: '<i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>',
-      nature: {
+      detail: {
          ageValue: ['>16'],
          timeValue: ['Less than 3 hours', 'From 3 to 5 hours'],
          typeValue: ['Racing', 'Action'],
@@ -67,7 +67,7 @@ let listOfGame = [
       name: 'Name product Mario Kart 64',
       image: 'image/image5.jpg',
       rate: '<i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>',
-      nature: {
+      detail: {
          ageValue: ['>16'],
          timeValue: ['Less than 3 hours', 'From 3 to 5 hours'],
          typeValue:['Racing', 'Kid'],
@@ -76,11 +76,11 @@ let listOfGame = [
    },
 ];
 
-let productFilter = listOfGame;
-showProduct(productFilter);
-function showProduct(productFilter){
+let gameFilter = listOfGame;
+showProduct(gameFilter);
+function showProduct(gameFilter){
    list.innerHTML = '';
-   productFilter.forEach(items => {
+   gameFilter.forEach(items => {
       let newItem = document.createElement('div');
       newItem.classList.add('items');
 
@@ -110,33 +110,33 @@ filter.addEventListener('submit', function(event){
    
    event.preventDefault();
    let valueFilter = event.target.elements;
-   productFilter = listOfGame.filter(items => {
+   gameFilter = listOfGame.filter(items => {
       // check age
       if(valueFilter.age.value != ''){
-         if(!items.nature.ageValue.includes(valueFilter.age.value)){
+         if(!items.detail.ageValue.includes(valueFilter.age.value)){
             return false;
          }
       }
 
       // check type of game
       if(valueFilter.type.value != ''){
-         if(!items.nature.typeValue.includes(valueFilter.type.value)){
+         if(!items.detail.typeValue.includes(valueFilter.type.value)){
             return false;
          }
       }
       // check time
       if(valueFilter.time.value != ''){
-         if(!items.nature.timeValue.includes(valueFilter.time.value)){
+         if(!items.detail.timeValue.includes(valueFilter.time.value)){
             return false;
          }
       }
       // check star
       if(valueFilter.rate.value != ''){
-         if(items.nature.rateValue != valueFilter.rate.value){
+         if(items.detail.rateValue != valueFilter.rate.value){
             return false;
          }
       }
       return true;
    })
-   showProduct(productFilter);
+   showProduct(gameFilter);
 })

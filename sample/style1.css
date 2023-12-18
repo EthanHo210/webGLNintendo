@@ -2,7 +2,6 @@
    margin-top: -5%;
    padding: 10px;
    display: grid;
-   column-gap: 1%;
    grid-template-columns: 32.66% 32.66% 32.66%;
    row-gap: 10px;
    margin-left: -20.8%;
@@ -12,7 +11,6 @@
 .input-group #list img{
    width: 300px;
    height: 180px;
-   object-fit: cover;
    margin: 20px 0;
    border-radius: 10px;
 }
