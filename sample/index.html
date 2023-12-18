@@ -1,365 +1,103 @@
-*{
-   margin:0; 
-   outline: none;
-   border-style: none;
-   font-family: Arial, Helvetica, sans-serif;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width = title, initial-scale=1.0">
+   <script src="https://kit.fontawesome.com/a3c4741b90.js" crossorigin="anonymous"></script>
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+   <link rel="stylesheet" href="./style.css">
+   <link rel="stylesheet" href="./style1.css">
+   <title>Software project</title>
+</head>
+<body>
+   <header>
+      <div class="header">
+         <h1>Nintendo©</h1>
+         <h1>ENTERTAINMENT SYSTEM</h1>
+         <h2>Choose game according to your personality</h2>
+      </div>
+      <div class="search">
+         <input type="text" id="search" placeholder="Search">
+         <span class="search-icon">
+            <i class="fa-solid fa-magnifying-glass"></i>
+         </span>
+            <i class="fa-solid fa-xmark"></i>
+      </div>
 
-body{
-   height: 100vh;
-   background-color: rgb(132, 126, 115);
-}
+      <script>
+         let search = document.querySelector(".search"),
+         searchIcon = document.querySelector(".search-icon"),
+         closeIcon = document.querySelector(".fa-xmark");
 
-header {
-   display: flex;
-   width: 100%;
-   height: 80%;
-   background: url(./image/download\ \(1\).jpg) no-repeat;    
-   background-size: cover;
-   background-position: center;
-}
+         console.log(search, searchIcon, closeIcon)
+         searchIcon.addEventListener("click", () => search.classList.add("open"));
+         closeIcon.addEventListener("click", () => search.classList.remove("open"));
+      </script>
+   </header>
 
-header .header{
-   color: rgb(205, 113, 0);
-   margin-left: 20%;
-   font-size: 30px;
-   margin-top: 10%;
-}
+   <div class="name">
+      <h1>Recommend game</h1>
+   </div>
+   <div class="input-group">
+      <form class="filter">
+         <h2>Choose option</h2>
+         <div class="items">
+            <select name="age" id="recommend_option">
+               <option value="" selected>Age</option>
+               <option value="From 5 to 16">From 5 to 16</option>
+               <option value=">16">>16</option>
+            </select>
+         </div>
+         <div class="items">
+            <select name="type" id="recommend_option">
+               <option value="" selected>Type of game</option>
+               <option value="Action">Action</option>
+               <option value="Adventure">Adventure</option>
+               <option value="Puzzle">Puzzle</option>
+               <option value="Racing">Racing</option>
+               <option value="Kid">Kid</option>
+            </select>
+         </div>
+         <div class="items">
+            <select name="time" id="recommend_option">
+               <option value="" selected>Length of time</option>
+               <option value="Less than 3 hours">Less than 3 hours</option>
+               <option value="From 3 to 5 hours">From 3 to 5 hours</option>
+               <option value="From 5 to 8 hours">From 5 to 8 hours</option>
+            </select> 
+         </div>
+         <div class="items">
+            <select name="rate" id="recommend_option">
+               <option value="" selected>Rating </option>
+               <option value="5 Stars">5 stars</option>
+               <option value="4 Stars">4 stars</option>
+               <option value="3 Stars">3 stars</option>
+               <option value="2 Stars">2 stars</option>
+               <option value="1 Stars">1 stars</option>
+            </select> 
+         </div>
+         <div class="items">
+            <select name="platform" id="recommend_option">
+               <option value="" selected>Platform </option>
+               <option value="Less than 3 hours">Windows</option>
+               <option value="From 3 to 5 hours">PlayStation</option>
+               <option value="From 5 to 8 hours">Xbox</option>
+            </select> 
+         </div>
+         <br>
+         <div class="button" id="button">
+            <input type="Submit" value="submit" id="submit">  
+            <input type="Reset" value="reset" id="reset">
+         </div>
+      </form>
+      <div id="list">
+         <!-- list of game -->
+      </div>
+   </div>
 
-header .header h2{
-   font-size: 25px;
-   margin-top: 60px;
-   text-align: center;
-}
-
-.search {
-   position: relative;
-   height: 35px;
-   max-width: 250px;
-   width: 100%;
-   background-color: #c1c1c1;
-   border-radius: 11px;
-   transition: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-   margin-top: 3%;
-}
-
-.search input{
-   position: relative;
-   height: 100%;
-   padding: 0 20px;
-   outline: none;
-   border: none;
-   border-radius: 11px;
-   font-weight: 300;
-   font-size: 20px;
-   left: 12%;
-   background-color: #c1c1c1;
-}
-
-.search .search-icon{
-   position: absolute;
-   left: 0;
-   top: 0;
-   height: 100%;
-   width: 50px;
-   border-radius: 11px;
-   background-color: #c1c1c1;
-   display: flex;
-   align-items: center;
-   justify-content: center;
-}
-
-.search-icon .fa-magnifying-glass{
-   color: rgb(255, 255, 255);
-   background-color: #c1c1c1;
-}
-
-.search .fa-xmark{
-   position: absolute;
-   right: -45px;
-   top: 50%;
-   transform: translateY(-50%);
-   color: #fff;
-   visibility: hidden;
-}
-
-.body{
-   background-color: rgb(152, 145, 131);
-}
-
-.name h1{
-   font-family: cursive;
-   text-align: center;
-   padding: 30px 0px 30px 0px;
-   font-style: italic;
-   font-size: 41px;
-   margin-bottom: 30px;
-}
-
-.input-group {
-   margin-left: 20%;
-}
-
-.input-group h2{
-   margin-bottom: 2%;
-   margin-left: 2%;
-}
-
-.input-group .filter{
-   margin-left: -10%;
-}
-
-.input-group .filter .items{
-   display: inline-block;
-   margin-bottom: 35px;
-   margin-left: 10px;
-   background-color: aliceblue;
-   border-radius: 11px;
-}
-
-.input-group .items #recommend_option{
-   background-color: aliceblue;
-   height: 5vh;
-   width: 30vh;
-   border-radius: 11px;
-   font-size: 15px;
-   text-align: center;
-   margin-left: 5px;
-}
-
-.button input{
-   background-color: #0B3948;
-   align-items: center;
-   text-align: center;
-   width: 80px;
-   height: 30px;
-   font-size: 15px;
-   margin-bottom: 8%;
-   transition-duration: 0.2s;
-   font-family: Candara;
-   color: #fff;
-   margin-left: 3%;
-}
-
-.button{
-   display: inline;
-   margin-left: 33%;
-}
-
-.button input:hover{
-   background-color: #B7D3F2;
-   color: #000;
-}
-
-footer {
-   bottom: 0;
-   width: 100%;
-   margin-top: 5%;
-}
-
-footer p{
-   background-color: rgb(223, 223, 223);
-   text-align: center;
-   padding: 25px 0px 10px 0px;
-   width: 100%;
-   height: 80px;
-}
-
-@media screen and (min-width:768px) and (max-width: 1024px){
-header {
-   background: none;  
-   width: 100%;
-   height: 10%; 
-   background-color: rgb(223, 223, 223);
-   margin-left: 0px; 
-   padding:1rem;
-}
-
-header .header{
-   font-size: 15px;
-   margin-top: 0%;
-   margin-left: 0%;
-}
-
-header .header h1{
-   font-size: 35px;
-}
-
-header .header h2{
-   visibility: hidden;
-}
-
-header .search{
-   width: 30%;
-   height: 35px;
-   margin-right: 50px;
-   margin-top: 3.5%;
-}
-
-.input-group h2{
-   text-align: center;
-   font-size: 30px;
-   margin-bottom: 2rem;
-   margin-right: 30%;
-}
-
-.input-group .filter{
-   margin-left: 0%;
-}
-
-.input-group .filter .items{
-   margin-left: 10%;
-   border-radius: 11px;
-   width: 55%;
-}
-
-.items{
-   margin-bottom: 10px;
-   margin-left: -5px;
-}
-
-.input-group .items #recommend_option{
-   background-color: aliceblue;
-   height: 3.5vh;
-   width: 35vh;
-   font-size: 20px;
-   margin-left: -5%;
-}
-
-.button{
-   margin-left: 20%;
-}
-
-.button input{
-   margin-top: 10px;
-   margin-bottom: 10%;
-   font-size: 20px;
-}
-
-.search input{
-   font-size: 12px;
-   margin-left: 10%;
-}
-}
-
-@media screen and (max-width: 480px){
-header .header{
-   font-size: 10px;
-   margin-top: 0%;
-}
-
-header .header h2{
-   visibility: hidden;
-}
-
-header {
-   background: none;  
-   height: 12%; 
-   background-color: rgb(223, 223, 223);
-   padding:10px 20px 0px 0px;
-}
-
-header .header{
-   margin-left: 10%;
-}
-
-header h1{
-   margin-left: -10px;
-}
-
-.search {
-   height: 28px;
-   max-width: 36px;
-   width: 60%;
-   margin-left: 2%;
-   margin-right: 10px;
-   margin-top: 15px;
-   border-radius: 11px;
-}
-
-.search.open{
-   max-width: 150px;
-   margin-right: 15px;
-   margin-left: -10%;
-}
-
-.search input{
-   font-size: 12px;
-   margin-left: 10px;
-}
-
-.search.open input{
-   padding : 0 15px 0 15px;
-}
-
-.search.open #search{
-   max-width: 500px;
-}
-
-.search .search-icon{
-   height: 100%;
-   width: 30px;
-}
-
-.search.open .search-icon{
-   border-radius: 11px 0 0 11px;
-}
-
-.search-icon .fa-magnifying-glass{
-   color: rgb(255, 255, 255);
-}
-
-.search .fa-xmark{
-   right: 50rem;
-   color: #9b9b9b;
-   background-color: #c5c5c5;
-   visibility: visible;
-   width: 30%;
-   height: 100%;
-   font-size: 25px;
-}
-
-.search.open .fa-xmark{
-   width: 0%;
-   margin-left: 45%;
-   left: 50%;
-   border-radius: 11px;
-}
-
-.name h1{
-   font-size: 25px;
-   margin-bottom: 0px;
-}
-
-.input-group h2{
-   text-align: center;
-   margin-left: -10%;
-   margin-bottom: 10%;
-   font-size: 20px;
-}
-
-.input-group .filter .items{
-   border-radius: 11px;
-   width: 42%;
-   height: 25px;
-   margin-left: 23%;
-   margin-bottom: 10px;
-}
-
-.input-group .items #recommend_option{
-   margin-right: 0px;
-   height: 3vh;
-   width: 20vh;
-   font-size: 12px;
-   margin-top: 2px;
-}
-
-.button{
-   margin-left: 15%;
-}
-
-.button input{
-   margin-top:5px;
-   margin-bottom: 5rem;
-}
-}
+   <script src="./script.js"></script>
+   <footer>
+      <p>&copy; 2023 Team 13 Emulator Team. All rights reserved.</p>
+   </footer>
+</body>
+</html>
