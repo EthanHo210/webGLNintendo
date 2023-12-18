@@ -25,10 +25,13 @@
     <script>
         const emulator = new JSNES({
             'swfPath': 'https://unpkg.com/jsnes@2.0.1/dist/player.swf',
+            'cpu': { 'cic_chip': 'CIC-SSN-2564' }, // SNES CIC chip
+            'screenWidth': 256, // SNES resolution is 256x224
+            'screenHeight': 224,
         });
 
-        emulator.ui.setScreen('#nes-screen');
-        emulator.ui.writeStatus('NES Emulator is ready.');
+        emulator.ui.setScreen('#snes-screen'); // Update the canvas ID
+        emulator.ui.writeStatus('SNES Emulator is ready.');
     </script>
 </body>
 </html>

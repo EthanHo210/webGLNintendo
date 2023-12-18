@@ -13,23 +13,24 @@ body {
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    height: 100vh;
-    background-color: #D3D3D3;
+    min-height: 100vh;
+    background-color: #cec9cc; /* SNES background color */
 }
 
-header{
-    background-color: #8A8988;
+header {
+    background-color: #4f43ae; /* SNES purple color for header */
     font-size: 14px;
 }
 
-footer{
-    background-color: #8A8988;
+footer {
+    background-color: #6A5ACD; /* SNES purple color for footer */
     text-align: center;
     font-size: 14px;
+    margin-top: auto;
 }
 
 header h1, footer p {
-    color: #8B0000;
+    color: #FF4500; /* SNES text color */
     font-family: "Eurostile-BoldExtendedTwo";
 }
 
@@ -44,10 +45,10 @@ canvas {
 }
 
 .footer-buttons a {
-    color: #8B0000;
+    color: #FF4500; /* SNES button text color */
     text-decoration: none;
     margin: 5px 30px;
-    font-size:12px;
+    font-size: 12px;
     font-family: "Eurostile-BoldExtendedTwo";
 }
 
