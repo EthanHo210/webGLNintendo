@@ -1,175 +1,102 @@
-*{
-   margin:0; 
-   padding:0;
-   box-sizing: border-box;
-   border:none;
-   text-decoration: none; 
-   font-family: Arial, Helvetica, sans-serif;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width = title, initial-scale=1.0">
+   <script src="https://kit.fontawesome.com/a3c4741b90.js" crossorigin="anonymous"></script>
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+   <link rel="stylesheet" href="./style.css">
+   <link rel="stylesheet" href="./style1.css">
+   <title>Software project</title>
+</head>
+<body>
+   <header>
+      <div class="header">
+         <img src="../Styles/NES_logo.svg" alt="">
+         <h2>Choose game according to your personality</h2>
+      </div>
+      <div class="search">
+         <input type="text" id="search" placeholder="Search">
+         <span class="search-icon">
+            <i class="fa-solid fa-magnifying-glass"></i>
+         </span>
+            <i class="fa-solid fa-xmark"></i>
+      </div>
 
-header {
-   display: flex;
-   background-color: #8A8988;
-   width: 100%;
-   height: 100px;
-}
+      <script>
+         let search = document.querySelector(".search"),
+         searchIcon = document.querySelector(".search-icon"),
+         closeIcon = document.querySelector(".fa-xmark");
 
-header img{
-   width: 100%;
-   height: 80%;
-   margin-left: 10%;
-   margin-top: 10px;
-}
+         console.log(search, searchIcon, closeIcon)
+         searchIcon.addEventListener("click", () => search.classList.add("open"));
+         closeIcon.addEventListener("click", () => search.classList.remove("open"));
+      </script>
+   </header>
 
-header .title{
-   display: flex;
-}
-
-header .title a{
-   color: #fff;
-   margin-left: 55rem;
-   margin-top: 3%;
-   font-size: 20px;
-   font-weight: 100px;
-}
-
-.head::before{
-   content: "";
-   background: url(./Untitled\ design\ \(2\).jpg) no-repeat;
-   background-size: cover;
-   background-position: center;
-   position: absolute;
-   z-index: -1;
-   width: 90%;
-   height: 60%;
-   margin-left: 3%;
-   margin-top: 0%;
-   opacity: 0.6;
-   margin-top: -100px;
-}
-
-.head h1{
-   font-size: 80px;
-   font-family: cursive;
-   font-style: italic;
-   color: #000;
-   text-align: center;
-   margin-bottom: 10rem;
-   margin-top: 100px;
-}
-
-.story {
-   position: absolute;
-   margin-top: 60px;
-   background-color: #ddd2e3;
-   width: 100%;
-   height: 30%;
-}
-
-.story h2{
-   text-align: center;
-   font-size: 35px;
-   font-family: Trebuchet MS, sans-serif;
-   margin-top: 20px;
-}
-
-.info1{
-   position: relative;
-   margin-top: 35%;
-   text-align: center;
-   margin-bottom: 10%;
-}
-
-.groupInfo{
-   display: grid;
-   grid-template-columns: 50% 50%;
-   margin-left: 15%;
-}
-
-.info {
-   display: flex;
-   margin-top: 20px;
-}
-
-.info h3{
-   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-
-.info .infoDetail{
-   margin-left: 20px;
-   text-align: left; 
-   padding: 10px 0px 0px 10px;
-   
-}
-
-.info .infoDetail .description{
-   margin-top: 10px;
-   border-bottom: 1px solid #a9a9a9;
-   border-top: 1px solid #a9a9a9;
-   padding: 10px 10px 10px 10px;
-}
-
-footer{
-   display: flex;
-   justify-content: space-between;
-   padding: 20px 80px;
-   background-color: rgb(111, 106, 96);
-}
-
-footer .col{
-   display: flex;
-   flex-direction: column;
-   align-items: flex-start;
-   margin-top: 20px;
-}
-
-footer .col h4{
-   font-size: 16px;
-   color: #fff;
-}
-
-footer .logo{
-   margin-bottom: 30px;
-   margin-left: 0px;
-}
-
-footer h4{
-   font-size: 14px;
-   padding-bottom: 20px;
-   color: #fff;
-}
-
-footer p{
-   font-size: 13px;
-   margin: 0 0 8px 0;
-   color: #fff;
-}
-
-footer a{
-   font-size: 13px;
-   text-decoration: none;
-   color: #222;
-   margin-bottom: 10px;
-   color: #fff;
-}
-
-footer .follow{
-   margin-top: 20px;
-}
-
-footer .follow h4{
-   font-size: 16px;
-}
-
-footer .follow i{
-   color:#5cca9a;
-   padding-right: 4px;
-   width: 30px;
-   font-size: 30px;
-   width: 50px;
-}
-
-footer .follow i:hover,
-footer a:hover{
-   color: #07a79d;
-}
+   <div class="body">
+   <div class="name">
+      <h1>Recommend game</h1>
+   </div>
+   <div class="input-group">
+      <form class="filter">
+         <h2>Choose option</h2>
+         <div class="items">
+            <select name="age" id="recommend_option">
+               <option value="" selected>Age</option>
+               <option value="From 5 to 16">From 5 to 16</option>
+               <option value=">16">>16</option>
+            </select>
+         </div>
+         <div class="items">
+            <select name="type" id="recommend_option">
+               <option value="" selected>Type of game</option>
+               <option value="Action">Action</option>
+               <option value="Adventure">Adventure</option>
+               <option value="Puzzle">Puzzle</option>
+               <option value="Racing">Racing</option>
+               <option value="Kid">Kid</option>
+            </select>
+         </div>
+         <div class="items">
+            <select name="time" id="recommend_option">
+               <option value="" selected>Length of time</option>
+               <option value="Less than 3 hours">Less than 3 hours</option>
+               <option value="From 3 to 5 hours">From 3 to 5 hours</option>
+               <option value="From 5 to 8 hours">From 5 to 8 hours</option>
+            </select> 
+         </div>
+         <div class="items">
+            <select name="rate" id="recommend_option">
+               <option value="" selected>Rating </option>
+               <option value="5 Stars">5 stars</option>
+               <option value="4 Stars">4 stars</option>
+               <option value="3 Stars">3 stars</option>
+               <option value="2 Stars">2 stars</option>
+               <option value="1 Stars">1 stars</option>
+            </select> 
+         </div>
+         <div class="items">
+            <select name="platform" id="recommend_option">
+               <option value="" selected>Platform </option>
+               <option value="Less than 3 hours">Windows</option>
+               <option value="From 3 to 5 hours">PlayStation</option>
+               <option value="From 5 to 8 hours">Xbox</option>
+            </select> 
+         </div>
+         <br>
+         <div class="button" id="button">
+            <input type="Submit" value="submit" id="submit"></button>   
+            <input type="Reset" value="reset" id="reset"></button>
+         </div>
+      </form>
+      <div id="list">
+         <!-- list of game -->
+      </div>
+   </div>
+   <script src="./script.js"></script>
+   <footer>
+      <p>&copy; 2023 Team 13 Emulator Team. All rights reserved.</p>
+   </footer>
+</body>
+</html>
