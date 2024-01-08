@@ -76,7 +76,11 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background-color: #cec9cc; /* SNES background color */
+    background-color: #f0f0f0;
+    background-image: url('marioWorld.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 
