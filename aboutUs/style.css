@@ -91,6 +91,10 @@ header .title a{
    margin-top: 20px;
 }
 
+.info img{
+   max-height: 150px;
+}
+
 .info h3{
    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }

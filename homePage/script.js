@@ -5,7 +5,7 @@ let listOfGame = [
    {
       id: 1,
       name: 'Super Mario',
-      image: 'image/image.webp',
+      image: 'homePage/image/image.webp',
       rate: '<i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>',
       nature: {
          ageValue: ['From 5 to 16', '>16'],
@@ -17,7 +17,7 @@ let listOfGame = [
    {
       id: 2,
       name: 'Star Wars: Rogue Squadron',
-      image: 'image/image1.png',
+      image: 'homePage/image/image1.png',
       rate: '</i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>',
       nature: {
          ageValue: ['>16'],
@@ -29,7 +29,7 @@ let listOfGame = [
    {
       id: 3,
       name: 'Name product The Legend of Zelda: Ocarina of Time',
-      image: 'image/image3.jpg',
+      image: 'homePage/image/image3.jpg',
       rate: '<i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>',
       nature: {
          ageValue: ['>16'],
@@ -41,7 +41,7 @@ let listOfGame = [
    {
       id: 4,
       name: 'Name product Mario Golf',
-      image: 'image/image2.jpg',
+      image: 'homePage/image/image2.jpg',
       rate: '<i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>',
       nature: {
          ageValue: ['From 5 to 16', '>16'],
@@ -53,7 +53,7 @@ let listOfGame = [
    {
       id: 5,
       name: 'Name product F-Zero X',
-      image: 'image/image4.jpg',
+      image: 'homePage/image/image4.jpg',
       rate: '<i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>',
       nature: {
          ageValue: ['>16'],
@@ -65,7 +65,7 @@ let listOfGame = [
    {
       id: 6,
       name: 'Name product Mario Kart 64',
-      image: 'image/image5.jpg',
+      image: 'homePage/image/image5.jpg',
       rate: '<i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>',
       nature: {
          ageValue: ['>16'],
