@@ -1,2 +1,2 @@
-# webGLNintendo
- Emulator running on a website 
+# webGameRecommend
+Games recommendation site
