@@ -54,7 +54,7 @@
 
 @media screen and (min-width:768px) and (max-width: 1024px){
 .input-group #list{
-   margin-top: -5%;
+   margin-top: 0%;
    column-gap: 1%;
    grid-template-columns: 50% 50%;
    row-gap: 10px;
@@ -62,7 +62,8 @@
 }
 
 .input-group #list .items .title{
-   margin-top: -1px;
+   margin-top: -10px;
+   margin-left: 10%;
 }
 
 .input-group #list .items{
@@ -72,12 +73,19 @@
 .input-group .nameG{
    height: -30px;
 }
+.input-group #list .items .title i{
+   display: inline;
+   font-size: 15px;
+   color: goldenrod;
+   width: 100px;
+   align-items: center;
+}
 }
 
 @media screen and (max-width: 480px){
    .input-group #list{
       display: block;
-      margin-left: -6.5%;
+      margin-left: 2%;
    }
    
    .input-group #list img{
@@ -85,24 +93,39 @@
       height: 150px;
       margin: 5px;
       border-radius: 10px;
+      margin-top: 10%;
    }
 
-   .input-group #list .items{
-      margin-bottom: 30px;
-   }
-   
    .input-group #list .items .title{
       font-size: 15px;
       background-color: rgb(223, 223, 223);
       margin-bottom: 0px;
+      margin-left: 25px;
+      width: 60%;
    }
    .input-group .nameG{
-      margin-bottom: -0.8px;
+      margin-bottom: 5%;
       font-size: 15px;
+      margin-left: 25px;
+      width: 60%;
+
    }
 
    .input-group #list .items .title .fa-solid {
       display: inline;
       font-size: 12px;
+      margin-top: 10%;
+   }
+
+   .input-group #list .items .title i{
+      display: inline;
+      font-size: 15px;      
+      color: goldenrod;
+      width: 100px;      
+      align-items: center;      
+   }
+
+   .input-group #list .items{
+      width: 60%;     
    }
 }
