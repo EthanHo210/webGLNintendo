@@ -9,7 +9,7 @@
 </head>
 <body>
    <header>
-        <a href="#"><img src="../Styles/NES_logo.svg" class="logo" alt=""></a>
+        <a href="../user/home.php"><img src="../Styles/NES_logo.svg" class="logo" alt=""></a>
         <div>
             <ul id="navbar">
                 <a href="../user/home.php">Home</a>
@@ -41,11 +41,11 @@
             </div>
          </div>
          <div class="info">
-            <img src="./download.png" alt="">
+            <img src="./image/quangAnh.jpg" alt="">
             <div class="infoDetail">
-               <h3>Name</h3>
-               <p>Designer</p>
-               <p class="description">Description</p>
+               <h3>Tran Quang Anhv</h3>
+               <p>Designer, Assistant manager, Tester</p>
+               <p class="description">A practicing system admin, heavily involved in conveying project manager's idea to team members</p>
             </div>
          </div>
          <div class="info">
