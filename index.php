@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="sign_in.css">
+    <link rel="stylesheet" href="sign_in.css?v=<?php echo time(); ?>">
     <script src="https://kit.fontawesome.com/f6af0088ad.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -30,25 +30,13 @@
                     <div class="roles">
                         <p><a href="./customer_login.php">Customer</a></p>
                         <p><a href="./vendor_login.php">Vendor</a></p>
-                        <p><a href="./shipper_login.php">Shipper</a></p>
                     </div>
                 </form>
             </div>
         </div>
         <div class="panels-container">
-            <div class="panel leftcontainer">
-                <div class="content">
-                    <p>ALREADY HAVE AN ACCOUNT</p>
-                    <button class="btn" id="sign-in-btn">Sign in</button>
-                </div>
-                <img src="./image/undraw_progressive_app_m-9-ms (1).svg" class="image" alt="btn" >
-            </div>
             <div class="panel rightcontainer">
-                <div class="content">
-                    <p>CREATE A NEW ACCOUNT</p>
-                    <button class="btn" id="sign-up-btn">Sign up</button>
-                </div>
-                <img src="./image/undraw_web_devices_re_m8sc.svg" class="image" alt="btn">
+                <img src="./Styles/NES_logo.svg" class="image" alt="btn">
             </div>
         </div>
     </div>
@@ -65,11 +53,11 @@ if(isset($_POST['submit'])){
     $success = "";
 
     if (isset($_POST["submit"])){
-        if($uname == "customer") {
+        if($uname == "admin") {
             if($pass == "Password01"){
                 $error = "";
                 $success = "welcome admin";
-                header("location:sample/home.php");
+                header("location:./admin/adminPage.php");
             }
             else{
                 $error = "invalid password";
@@ -82,28 +70,11 @@ if(isset($_POST['submit'])){
         }
     }
     if (isset($_POST["submit"])){
-        if($uname == "vendor") {
+        if($uname == "user") {
             if($pass == "Password02"){
                 $error = "";
-                $success = "welcome admin";
-                header("location:sample/home.php");
-            }
-            else{
-                $error = "invalid password";
-                $success = "";
-            }
-        }
-        else{
-            $error = "invalid username";
-            $success = "";
-        }
-    }
-    if (isset($_POST["submit"])){
-        if($uname == "shipper") {
-            if($pass == "Password03"){
-                $error = "";
-                $success = "welcome admin";
-                header("location:sample/home.php");
+                $success = "welcome customer";
+                header("location:./user/home.php");
             }
             else{
                 $error = "invalid password";
