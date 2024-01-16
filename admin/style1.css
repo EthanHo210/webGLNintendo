@@ -1,0 +1,401 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Spartan', sans-serif;
+}
+
+body{
+   background-color: rgb(223, 223, 223);}
+
+header{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 20px 80px;
+   background-color: rgb(111, 106, 96);
+   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+   top: 0;
+   left: 0;
+}
+
+header img{
+   width: 10rem;
+   margin-top: 8px;
+   margin-left: 80px;
+}
+
+#navbar{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+h3 {
+   font-size: 25px;
+   color: #222;
+   margin-top: 8px;
+}
+
+h4 {
+   font-size: 15px;
+   color: #222;
+}
+
+img{
+   display: block;
+   max-height: 100%;
+   max-width: 100%;
+   margin-left: 0%;
+}
+
+#navbar a{
+   padding: 0 20px;
+   color: #fff;
+   text-decoration: none;
+}
+
+/* Caption text */
+.text {
+   color: #f2f2f2;
+   font-size: 12px;
+   margin-top: -5%;
+   width: 100%;
+   text-align: center;
+}
+
+#newsletter{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   background-color: #041e42;
+   padding: 30px 80px;
+}
+
+#newsletter h4{
+   font-size: 20px;
+   font-weight: 500;
+   color: #fff;
+}
+
+#newsletter p{
+   font-size: 12px;
+   font-weight: 500;
+   color: rgb(174, 163, 189);
+}
+
+#newsletter p span {
+color: rgb(252, 183, 10);
+}
+
+#newsletter .form{
+   margin-right: 10rem;
+}
+
+#newsletter input{
+   height: 2.5rem;
+   padding: 0 1.25em;
+   font-size: 15px;
+   width: 100%;
+   border-radius: 10px;
+   outline: none;
+   margin-bottom: 10px;
+}
+
+#newsletter button{
+   background-color: #088178;
+   color: #fff;
+   width: 30%;
+   height: 25px;
+}
+
+/* edit game */
+.container{
+   margin-bottom: 2rem;
+   margin-top: 1rem;
+}
+
+.container .admin-game-form-container {
+   font-size: 25px;
+   text-align: center;
+   align-items: center;
+}
+
+.admin-game-form-container form{
+   max-width: 30rem;
+   padding: 1rem;
+   margin: 0 auto;
+   text-align: center;
+   border: var(--border);
+   box-shadow: var(--box-shadow);
+   background-color:#fff ;
+   border-radius: .5rem;
+}
+
+.admin-game-form-container h3{
+   font-family: cursive;
+   text-align: center;
+   padding: 30px 0px 30px 0px;
+   font-style: italic;
+   font-size: 38px;
+   margin-bottom: 30px;
+}
+
+.admin-game-form-container form input{
+   width: 20%;
+}
+
+.admin-game-form-container form .box{
+   width: 100%;
+   margin: .5rem 0;
+   padding: 1rem .5rem;
+   font-size: 15px;
+   border-radius: .5rem;
+   background-color: #eee;
+   border: var(--border);
+   border-color: var(--box-shadow);
+   color: #000;
+}
+
+.admin-game-form-container .btn{
+   display: block;
+   width: 25%;
+   cursor: pointer;
+   border-radius: .5rem;
+   margin-top: .5rem;
+   font-size: 15px;
+   padding:.5rem 1rem;
+   background: #2590ee;
+   color: #fff;
+   text-align: center;
+   align-items: center;
+   margin-left: 38%;
+}
+
+footer{
+   display: flex;
+   justify-content: space-between;
+   background-color: rgb(111, 106, 96);
+   padding: 10px 20rem 10px 10rem;
+}
+
+footer .col{
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   margin-top: 15px;
+}
+
+footer .col h4{
+   font-size: 16px;
+   color: #fff;
+}
+
+footer .logo{
+   margin-bottom: 10px;
+}
+
+footer h4{
+   font-size: 20px;
+   padding-bottom: 10px;
+   color: #fff;
+}
+
+footer p{
+   font-size: 12px;
+   margin: 0 0 8px 0;
+   color: #fff;
+}
+
+footer a{
+   font-size: 12px;
+   text-decoration: none;
+   color: #222;
+   margin-bottom: 10px;
+   color: #fff;
+}
+
+footer .follow{
+   margin-top: 15px;
+}
+
+footer .follow h4{
+   font-size: 16px;
+}
+
+footer .follow i{
+   color:#5cca9a;
+   padding-right: 4px;
+   width: 25px;
+   font-size: 25px;
+   width: 45px;
+}
+
+footer .follow i:hover,
+footer a:hover{
+   color: #07a79d;
+}
+
+@media screen and (min-width:768px) and (max-width: 1024px){
+   header {
+      background: none;  
+      width: 100%;
+      height: 10%; 
+      background-color: rgb(111, 106, 96);
+      margin-left: 0px; 
+      padding:1rem;
+   }
+
+   header .header{
+      font-size: 15px;
+      margin-top: 0%;
+      margin-left: 0%;
+   }
+
+   .header img{
+      width: 9rem;
+      height: 3rem;
+      margin-left: 10rem;
+   }
+   
+   header .header h1{
+      font-size: 35px;
+   }
+   
+   header .header h2{
+      visibility: hidden;
+   }
+
+   header .search{
+      width: 20%;
+      height: 25px;
+      margin-right: 35px;
+      margin-top: 0;
+   } 
+   
+   .input-group .filter{
+      margin-left: 15%;
+   }
+
+   .input-group .filter .items{
+      margin-left: -10%;
+      border-radius: 11px;
+      width: 100%;
+   }
+  .input-group .filter .items{
+      width: 350px;
+      display: flex;
+      height: 2rem;
+      font-size: 20rem;
+      margin-bottom: 10px;
+
+   }
+
+   footer{
+      padding: 2px 2rem 2px 3rem;
+   }
+   
+   .input-group .items #recommend_option{
+      background-color: aliceblue;
+      height: 2rem;
+      width: 120rem ;
+      border-radius: 11px;
+      font-size: 15px;
+      text-align: center;
+      }
+   .button{
+      margin-left: 0%;
+   }
+
+
+   .search input{
+      font-size: 12px;
+      margin-left: 10%;
+   }
+}
+
+@media screen and (max-width: 480px){
+   header .header{
+      font-size: 10px;
+      margin-top: 0%;
+   }
+   
+   header .header h2{
+      visibility: hidden;
+      margin-left: -10rem;
+   }
+
+   header {
+      background: none;  
+      height: 12%; 
+      background-color: rgb(111, 106, 96);
+      padding:10px 20px 0px 0px;
+   }
+
+   header .header{
+      margin-left: 10%;
+   }
+
+  header h1{
+   margin-left: -10px;
+  }
+
+  header img{
+      width: 5rem;
+      height: 3rem;
+      margin-left: 10px;
+      margin-top: 2px;
+  }
+
+  .container{
+   width: 85%;
+   margin-left: 30px;
+   margin-top: 35px;
+}
+
+.container .admin-game-form-container {
+   font-size: 10px;
+}
+
+.admin-game-form-container form{
+   max-width: 30rem;
+   padding: .5rem;
+}
+
+.admin-game-form-container h3{
+   padding: 15px 0px 15px 0px;
+   font-style: italic;
+   font-size: 30px;
+   margin-bottom: 15px;
+}
+
+.admin-game-form-container form .box{
+   width: 100%;
+   margin: .5rem 0;
+   padding: 1rem .3rem;
+   font-size: 15px;
+}
+
+.admin-game-form-container .btn{
+   display: inline;
+   width: 38%;
+   border-radius: .5rem;
+   margin-top: .5rem;
+   font-size: 15px;
+   padding:.5rem 1rem;
+   background: #2590ee;
+   color: #fff;
+   text-align: center;
+   align-items: center;
+   margin-left: 0;
+}
+
+#newsletter {
+   visibility: hidden;
+}
+
+footer{
+   display: block;
+   padding: 1px 2rem 1px 1rem;
+}
+}  
