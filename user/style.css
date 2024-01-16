@@ -29,9 +29,9 @@ header{
 }
 
 header img{
-   width: 70%;
+   width: 80%;
    height: 45%;
-   margin-left: 47%;
+   margin-left: 50%;
 }
 
 header .header{
@@ -44,16 +44,16 @@ header .header{
 header .header h2{
    font-size: 25px;
    margin-top: 60px;
-   margin-left: 35%;
+   margin-left: 38%;
    margin-right: -50%;
 }
 
 .search {
    position: relative;
-   height: 30px;
+   height: 35px;
    max-width: 200px;
    width: 100%;
-   background-color: #c1c1c1;
+   background-color: #a1a1a1;
    border-radius: 11px;
    transition: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
    margin-top: 3%;
@@ -69,9 +69,10 @@ header .header h2{
    border: none;
    border-radius: 11px;
    font-weight: 300;
-   font-size: 15px;
+   font-size: 20px;
+   color: #fff;
    left: 15%;
-   background-color: #c1c1c1;
+   background-color: #a1a1a1;
 }
 
 .search .search-icon{
@@ -81,7 +82,7 @@ header .header h2{
    height: 100%;
    width: 50px;
    border-radius: 11px;
-   background-color: #c1c1c1;
+   background-color: #a1a1a1;
    display: flex;
    align-items: center;
    justify-content: center;
@@ -89,7 +90,7 @@ header .header h2{
 
 .search-icon .fa-magnifying-glass{
    color: rgb(255, 255, 255);
-   background-color: #c1c1c1;
+   background-color: #a1a1a1;
 }
 
 .search .fa-xmark{
@@ -278,6 +279,12 @@ footer a:hover{
       margin-top: 0%;
       margin-left: 0%;
    }
+
+   .header img{
+      width: 9rem;
+      height: 3rem;
+      margin-left: 10rem;
+   }
    
    header .header h1{
       font-size: 35px;
@@ -288,50 +295,48 @@ footer a:hover{
    }
 
    header .search{
-      width: 30%;
-      height: 35px;
-      margin-top: 3.5%;
-   }
-   
-   .input-group h2{
-      text-align: center;
-      font-size: 30px;
-      margin-bottom: 2rem;
-      margin-right: 30%;
-   }
+      width: 20%;
+      height: 25px;
+      margin-right: 35px;
+      margin-top: 0;
+   } 
    
    .input-group .filter{
-      margin-left: 0%;
+      margin-left: 15%;
    }
 
    .input-group .filter .items{
-      margin-left: 10%;
+      margin-left: -10%;
       border-radius: 11px;
-      width: 55%;
+      width: 100%;
+   }
+  .input-group .filter .items{
+      width: 350px;
+      display: flex;
+      height: 2rem;
+      font-size: 20rem;
+      margin-bottom: 10px;
+
    }
 
-   .items{
-      margin-bottom: 10px;
-      margin-left: -5px;
+   footer{
+      padding: 5px 3rem 5px 3rem;
    }
    
+   
+
    .input-group .items #recommend_option{
       background-color: aliceblue;
-      height: 3.5vh;
-      width: 35vh;
-      font-size: 20px;
-      margin-left: -5%;
-   }
-
+      height: 2rem;
+      width: 120rem ;
+      border-radius: 11px;
+      font-size: 15px;
+      text-align: center;
+      }
    .button{
-      margin-left: 20%;
+      margin-left: 0%;
    }
 
-   .button input{
-      margin-top: 10px;
-      margin-bottom: 10%;
-      font-size: 20px;
-   }
 
    .search input{
       font-size: 12px;
@@ -347,6 +352,7 @@ footer a:hover{
    
    header .header h2{
       visibility: hidden;
+      margin-left: -10rem;
    }
 
    header {
@@ -364,14 +370,16 @@ footer a:hover{
    margin-left: -10px;
   }
 
-   .search {
-      height: 28px;
-      max-width: 36px;
-      width: 60%;
-      margin-left: 2%;
+  .header img{
+      width: 5rem;
+      height: 3rem;
+      margin-left: 0%;
+  }
 
-      margin-top: 15px;
-      border-radius: 11px;
+   .search {
+      margin-right: 1rem;
+      max-width: 10px;
+      margin-right: 20%;
    }
 
    .search.open{
@@ -408,12 +416,13 @@ footer a:hover{
 
    .search .fa-xmark{
    right: 50rem;
-   color: #9b9b9b;
+   color: #ffffff;
    background-color: #c5c5c5;
    visibility: visible;
    width: 30%;
    height: 100%;
    font-size: 25px;
+   margin-top: 5px;
    }
 
    .search.open .fa-xmark{
@@ -440,8 +449,7 @@ footer a:hover{
       width: 42%;
       height: 25px;
       margin-left: 23%;
-      /* margin-bottom: 0%; */
-      margin-bottom: 10px;
+      margin-bottom: 15px;
    }
 
    .input-group .items #recommend_option{
@@ -453,11 +461,15 @@ footer a:hover{
    }
 
    .button{
-      margin-left: 15%;
+      margin-left: 20%;
    }
 
    .button input{
       margin-top:5px;
       margin-bottom: 5rem;
-   }
+   } 
+footer{
+   display: block;
+   padding: 1px 2rem 1px 1rem;
+}
 }  
