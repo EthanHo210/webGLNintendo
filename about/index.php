@@ -9,11 +9,15 @@
 </head>
 <body>
    <header>
-      <div class="title">
-         <img src="../Styles/NES_logo.svg" alt="btn">
-         <a href="#">Home</a>
-      </div>
-   </header>
+        <a href="#"><img src="../Styles/NES_logo.svg" class="logo" alt=""></a>
+        <div>
+            <ul id="navbar">
+                <a href="../user/home.php">Home</a>
+                <a href="../about/index.php">About</a>
+                <a href="../index.php">Login</a>
+            </ul>
+        </div>
+    </header>
 
    <div class="head">
       <h1>About Us</h1>
@@ -81,14 +85,13 @@
       </div>
       <div class="col">
           <h4>About</h4>
-          <a href="#">About us</a>
+          <a href="../about/index.php">About us</a>
           <a href="#">Terms & Conditions</a>
           <a href="#">Contact Us</a>
       </div>
       <div class="col">
           <h4>My Account</h4>
-          <a href="#">Sign In</a>
-          <a href="#">Help</a>
+          <a href="../index.php">Sign In</a>
       </div>
   </footer>
 </body>
