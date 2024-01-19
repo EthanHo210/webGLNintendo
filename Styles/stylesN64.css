@@ -9,7 +9,7 @@
 }
 
 header{
-    background-color: #39c9bb;
+    background-color: #333333;
     font-size: 14px;
 }
 
@@ -34,12 +34,12 @@ header{
     font-family: "Eurostile-BoldExtendedTwo";
     display: inline-block;
     padding: 8px 12px;
-    background-color: #39c9bb;
+    background-color: #333333;
     border-radius: 5px;
 }
 
 .header-buttons a:hover {
-    background-color: #39c9bb;
+    background-color: #333333;
     color: #FF4500;
 }
 

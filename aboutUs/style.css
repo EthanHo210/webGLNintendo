@@ -83,7 +83,7 @@ header .title a{
 .groupInfo{
    display: grid;
    grid-template-columns: 50% 50%;
-   margin-left: 15%;
+   margin-left: 5%;
 }
 
 .info {
